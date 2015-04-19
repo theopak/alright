@@ -3,6 +3,7 @@ import ActionTypes from '../constants/ActionTypes';
 import PayloadSources from '../constants/PayloadSources';
 import EventEmitter from 'eventemitter3';
 import assign from 'react/lib/Object.assign';
+import BaseStore from 'fluxible/addons/BaseStore';
 
 
 // var AppDispatcher = require('../dispatcher/AppDispatcher');
@@ -94,5 +95,25 @@ PostStore.dispatcherToken = Dispatcher.register((payload) => {
   }
 
 });
+
+// const PostStore = createStore({
+//     return isInBag(postList);
+//   },
+
+//   getPostList() {
+//     return postList;
+//   }
+// });
+
+// PostStore.dispatchToken = Dispatcher.register(function (payload) {
+//   const { response } = payload.action;
+//   const entities = response && response.entities;
+//   const fetchedPostList = entities && entities.postList;
+
+//   if (fetchedPostList) {
+//     mergeIntoBag(postList, fetchedPostList);
+//     PostStore.emitChange();
+//   }
+// });
 
 export default PostStore;

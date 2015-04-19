@@ -14,6 +14,7 @@ import React from 'react';
 import Dispatcher from './core/Dispatcher';
 import ActionTypes from './constants/ActionTypes';
 import AppStore from './stores/AppStore';
+// import PostStore from './stores/PostStore';
 
 var server = express();
 
