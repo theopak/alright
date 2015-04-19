@@ -1,0 +1,6 @@
+{
+  "name": "PostListPage",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PostListPage.js"
+}

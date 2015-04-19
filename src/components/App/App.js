@@ -11,10 +11,12 @@ import React, { PropTypes } from 'react';
 import invariant from 'react/lib/invariant';
 import AppActions from '../../actions/AppActions';
 import AppStore from '../../stores/AppStore';
+import PostStore from '../../stores/PostStore';
 import Navbar from '../Navbar';
 import ContentPage from '../ContentPage';
 import NotFoundPage from '../NotFoundPage';
 import setViewport from './setViewport';
+import PostListPage from '../PostListPage';
 
 class App {
 
@@ -43,6 +45,7 @@ class App {
 
   render() {
     var page = AppStore.getPage(this.props.path);
+    var postList = PostStore.getPostList();
     invariant(page !== undefined, 'Failed to load page content.');
     this.props.onSetTitle(page.title);
 
@@ -66,6 +69,7 @@ class App {
             <h2>{page.title}</h2>
           </div>
         }
+        <PostListPage className="container" items="postList" />
         <ContentPage className="container" {...page} />
         <div className="navbar-footer">
           <div className="container">
