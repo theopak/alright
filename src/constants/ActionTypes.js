@@ -13,6 +13,12 @@ export default keyMirror({
   LOAD_PAGE: null,
   LOAD_PAGE_SUCCESS: null,
   LOAD_PAGE_ERROR: null,
-  CHANGE_LOCATION: null
+  CHANGE_LOCATION: null,
+
+  LOAD_POSTLIST: null,
+  LOAD_POSTLIST_SUCCESS: null,
+  LOAD_POSTLIST_ERROR: null,
+  ADD_POST: null,
+  REMOVE_POST: null
 
 });
