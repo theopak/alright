@@ -10,9 +10,11 @@ import './App.less';
 import React, { PropTypes } from 'react';
 import invariant from 'react/lib/invariant';
 import AppActions from '../../actions/AppActions';
+import PostActions from '../../actions/PostActions';
 import AppStore from '../../stores/AppStore';
 import Navbar from '../Navbar';
 import ContentPage from '../ContentPage';
+import PostListPage from '../PostListPage';
 import NotFoundPage from '../NotFoundPage';
 import setViewport from './setViewport';
 
@@ -42,6 +44,7 @@ class App {
   }
 
   render() {
+    // PostActions.loadPostList();
     var page = AppStore.getPage(this.props.path);
     invariant(page !== undefined, 'Failed to load page content.');
     this.props.onSetTitle(page.title);
@@ -67,6 +70,7 @@ class App {
           </div>
         }
         <ContentPage className="container" {...page} />
+        <PostListPage />
         <div className="navbar-footer">
           <div className="container">
             <p className="text-muted">
