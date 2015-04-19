@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React / Flux &nbsp;Starter Kit
 
 [![Build Status](http://img.shields.io/travis/kriasoft/react-starter-kit/master.svg?style=flat)](http://travis-ci.org/kriasoft/react-starter-kit)
@@ -128,3 +129,6 @@ Source code is licensed under the MIT License (MIT). See [LICENSE.txt](./LICENSE
 file in the project root. Documentation to the project is licensed under the
 [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/) license. React logo
 image is a trademark of Facebook, Inc.
+=======
+# alright
+>>>>>>> dca77be81e42ab9f73aa48af0abd3c155374c83d
